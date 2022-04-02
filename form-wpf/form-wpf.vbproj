@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>form_wpf</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Haley.WPF" Version="5.2.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\Themes\DarkTheme.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
